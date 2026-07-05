@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    direction: rtl;
+    background: white;
+    overflow: hidden;
+}
+
+/* 🌤️ BACKGROUND */
+.bg {
+    position: fixed;
+    inset: 0;
+    background: white;
+    z-index: -3;
+}
+
+/* 👨‍⚕️ DOCTOR BLUR */
+.doctor {
+    position: fixed;
+    inset: 0;
+    background: url("https://images.unsplash.com/photo-1580281657527-47f249e8f0c9") center/cover;
+    filter: blur(14px) brightness(0.85);
+    transform: scale(1.1);
+    z-index: -2;
+}
+
+/* 🪟 GLASS */
+.glass {
+    width: 92%;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* TEXT */
+h1 {
+    color: black;
+    font-weight: 900;
+}
+
+p {
+    color: #333;
+    margin-top: 5px;
+}
+
+/* INPUT */
+.inputBox {
+    display: flex;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.inputBox input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: black;
+}
+
+.inputBox input::placeholder {
+    color: #888;
+}
+
+/* 🎨 COLOR BUTTON */
+.inputBox button {
+    padding: 14px 18px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    transition: 0.3s;
+}
+
+.inputBox button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+}
+
+.card:hover {
+    background: black;
+    color: white;
+    transform: scale(1.05);
+}
